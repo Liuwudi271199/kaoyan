@@ -3109,8 +3109,8 @@ init();
 (function(){
   var quotes=["橹穆并肩，一战成硕","今天的努力，是明天的底气","你背不下来的书，总有人能背下来","慢慢来，比较快","坚持本身，就是答案","乾坤未定，你我皆是黑马","相信橹穆，也相信自己","星光不负赶路人","来得及，考得上，你可以"];
   var saved=localStorage.getItem('examDate');
-  var target=saved?new Date(saved):new Date('2025-12-21');
-  if(isNaN(target.getTime()))target=new Date('2025-12-21');
+  var target=saved?new Date(saved):new Date('2026-12-20');
+  if(isNaN(target.getTime()))target=new Date('2026-12-20');
   var now=new Date();
   var days=Math.max(0,Math.ceil((new Date(target.getFullYear(),target.getMonth(),target.getDate())-new Date(now.getFullYear(),now.getMonth(),now.getDate()))/86400000));
   var daysEl=document.getElementById('splash-days');
