@@ -3237,6 +3237,8 @@ init();
     e.stopPropagation();
     var now=Date.now();
     clickCount++;
+    // Toggle image on each click
+    if(currentImg===1){petImg.src=pet2Src;currentImg=2;}else{petImg.src=pet1Src;currentImg=1;}
     
     // Play sound
     if(clickCount%3===0&&sparkleSound){sparkleSound.currentTime=0;sparkleSound.play().catch(function(){});}
