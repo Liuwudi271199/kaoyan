@@ -23,12 +23,38 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
 .platform-name{font-size:12px;font-weight:600}
 .platform-sub{font-size:10px;color:#7A7799}
 .back{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#4F8EF7,#FF6B9D);color:#fff;border:none;padding:10px 32px;border-radius:24px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 4px 16px rgba(79,142,247,0.3);z-index:100}
+.search-box{margin-bottom:16px;display:flex;flex-direction:column;gap:8px}
+.search-btn{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.9);border-radius:14px;padding:12px 14px;text-decoration:none;color:inherit;box-shadow:0 2px 12px rgba(79,142,247,0.06);transition:.2s;border-left:3px solid transparent}
+.search-btn:active{transform:translateX(2px)}
+.search-btn.ao3{border-left-color:#C0392B}
+.search-btn.xhs{border-left-color:#FF2442}
+.search-icon{font-size:20px}
+.search-text{flex:1;font-size:13px;font-weight:600}
+.search-arrow{font-size:16px;color:#B5B2CC}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>📝 橹穆文仓</h1>
   <p>同人文推荐合集 · AO3 / 晋江 / 长佩 / 话本 / 番茄</p>
+</div>
+
+<div class="search-box">
+  <a class="search-btn ao3" href="https://www.ao3-mirror.cc/tags/橹穆/works" target="_blank">
+    <span class="search-icon">🔥</span>
+    <span class="search-text">AO3 橹穆全部作品</span>
+    <span class="search-arrow">→</span>
+  </a>
+  <a class="search-btn xhs" href="https://www.xiaohongshu.com/search_result?keyword=橹穆AO3同人文推荐" target="_blank">
+    <span class="search-icon">📕</span>
+    <span class="search-text">小红书搜「橹穆AO3推荐」</span>
+    <span class="search-arrow">→</span>
+  </a>
+  <a class="search-btn xhs" href="https://www.xiaohongshu.com/search_result?keyword=橹穆同人文神文" target="_blank">
+    <span class="search-icon">📕</span>
+    <span class="search-text">小红书搜「橹穆神文推荐」</span>
+    <span class="search-arrow">→</span>
+  </a>
 </div>
 
 <div class="section">
