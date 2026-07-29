@@ -390,7 +390,7 @@ html,body{
 @keyframes audioPulse{0%,100%{box-shadow:0 4px 16px rgba(255,107,157,0.4)}50%{box-shadow:0 4px 24px rgba(255,107,157,0.7),0 0 0 8px rgba(255,107,157,0.15)}}
 
 /* Desk Pet */
-.desk-pet{position:fixed;bottom:70px;left:16px;z-index:450;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s ease;animation:petFloat 3s ease-in-out infinite}
+.desk-pet{position:fixed;bottom:85px;left:16px;z-index:450;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s ease;animation:petFloat 3s ease-in-out infinite}
 .desk-pet img{width:80px;height:auto;display:block;filter:drop-shadow(0 4px 8px rgba(0,0,0,.15));transition:all .2s}
 .desk-pet:hover img,.desk-pet:active img{filter:drop-shadow(0 6px 16px rgba(79,142,247,.35)) brightness(1.05)}
 .desk-pet:active{transform:scale(1.15)}
@@ -3253,7 +3253,7 @@ init();
     var bubble=document.createElement('div');
     bubble.className='pet-bubble';
     bubble.textContent=quotes[Math.floor(Math.random()*quotes.length)];
-    bubble.style.bottom='130px';
+    bubble.style.bottom='145px';
     bubble.style.left='20px';
     document.body.appendChild(bubble);
     setTimeout(function(){if(bubble.parentNode)bubble.parentNode.removeChild(bubble);},2800);
