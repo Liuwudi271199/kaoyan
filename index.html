@@ -390,7 +390,7 @@ html,body{
 @keyframes audioPulse{0%,100%{box-shadow:0 4px 16px rgba(255,107,157,0.4)}50%{box-shadow:0 4px 24px rgba(255,107,157,0.7),0 0 0 8px rgba(255,107,157,0.15)}}
 
 /* Desk Pet */
-.desk-pet{position:fixed;bottom:70px;right:16px;z-index:450;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s ease;animation:petFloat 3s ease-in-out infinite}
+.desk-pet{position:fixed;bottom:70px;left:16px;z-index:450;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s ease;animation:petFloat 3s ease-in-out infinite}
 .desk-pet img{width:80px;height:auto;display:block;filter:drop-shadow(0 4px 8px rgba(0,0,0,.15));transition:all .2s}
 .desk-pet:hover img,.desk-pet:active img{filter:drop-shadow(0 6px 16px rgba(79,142,247,.35)) brightness(1.05)}
 .desk-pet:active{transform:scale(1.15)}
@@ -406,7 +406,7 @@ html,body{
 @keyframes sparkleFly{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--sx),var(--sy)) scale(0)}}
 /* pet bubble speech */
 .pet-bubble{position:fixed;pointer-events:none;z-index:455;background:linear-gradient(135deg,#fff 0%,#FFF0F5 100%);border-radius:18px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--pink-deep);box-shadow:0 4px 16px rgba(255,107,157,0.2);animation:petBubbleIn .5s ease,petBubbleFloat 2s ease-in-out .5s infinite;max-width:160px;text-align:center}
-.pet-bubble::after{content:'';position:absolute;bottom:-8px;right:20px;width:16px;height:8px;background:linear-gradient(135deg,#fff 0%,#FFF0F5 100%);clip-path:polygon(0 0,100% 0,50% 100%)}
+.pet-bubble::after{content:'';position:absolute;bottom:-8px;left:20px;width:16px;height:8px;background:linear-gradient(135deg,#fff 0%,#FFF0F5 100%);clip-path:polygon(0 0,100% 0,50% 100%)}
 @keyframes petBubbleIn{0%{opacity:0;transform:translateY(10px) scale(.8)}100%{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes petBubbleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 /* heart rain */
